@@ -1,0 +1,24 @@
+<div
+  class="p-4 mt-2 bg-neutral-50 flex flex-col gap-2 rounded-md shadow-md relative max-w-[340px]"
+>
+  @if (!product().availableQuantity) {
+    <span
+      class="absolute right-[-15px] top-[21px] bg-slate-400 px-2 out-of-stock"
+      >Out of Stock</span
+    >
+  }
+  <div class="mx-auto">
+    <img
+      [src]="product().imageUrl"
+      [alt]="product().title"
+      class="w-[300px] h-[200px] object-contain"
+    />
+  </div>
+  <span class="text-md">{{ product().title }}</span>
+  <span class="text-lg">{{ product().price | currency: "EUR" }}</span>
+  <app-button
+    [label]="'Add to Cart'"
+    [disabled]="!product().availableQuantity"
+    (clicked)="addProductToCart()"
+  ></app-button>
+</div>

@@ -1,0 +1,7 @@
+<div class="flex justify-center">
+  <div class="p-8 grid grid-cols-[repeat(3,minmax(0,max-content))] gap-4">
+    @for (product of products(); track product.id) {
+      <app-product-card [product]="product"></app-product-card>
+    }
+  </div>
+</div>

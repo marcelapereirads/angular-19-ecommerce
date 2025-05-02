@@ -1,0 +1,37 @@
+import { Component, signal } from '@angular/core';
+import { Product } from './product.model';
+import { ProductCardComponent } from './product-card/product-card.component';
+
+@Component({
+  selector: 'app-products',
+  imports: [ProductCardComponent],
+  templateUrl: './products.component.html',
+})
+export class ProductsComponent {
+  products = signal<Product[]>([
+    {
+      id: 1,
+      title: 'Perfume Versace',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2017/05/06/09/06/versace-2289267_1280.jpg',
+      price: 300,
+      availableQuantity: 20,
+    },
+    {
+      id: 2,
+      title: 'Acqua di Gio',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2021/08/03/06/47/perfume-6518634_1280.jpg',
+      price: 80,
+      availableQuantity: 0,
+    },
+    {
+      id: 3,
+      title: 'Kit Dove Sensitive',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2014/08/10/18/00/razor-414909_1280.jpg',
+      price: 25,
+      availableQuantity: 8,
+    },
+  ]);
+}
