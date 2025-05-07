@@ -1,11 +1,11 @@
 <li
-  class="flex flex-row justify-between rounded-md shadow-md bg-neutral-50 px-4 py-6"
+  class="flex flex-col md:flex-row justify-between rounded-md shadow-md bg-neutral-50 px-4 py-6"
 >
-  <div class="flex flex-row">
+  <div class="flex flex-col md:flex-row">
     <img
       src="{{ product().imageUrl }}"
       alt="{{ product().name }}"
-      class="w-[200px] h-[150px] object-contain"
+      class="w-[200px] h-[150px] object-contain self-center md:self-start"
     />
     <div class="flex flex-col">
       <span class="text-lg font-semibold">{{ product().name }}</span>

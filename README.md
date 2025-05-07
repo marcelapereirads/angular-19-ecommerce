@@ -8,6 +8,8 @@ The primary goal of this project is to learn and experiment with Angular's **sig
 
 [Modern Angular 19 Crash Course - E-commerce App!](https://www.youtube.com/watch?v=RNr1QZM4A38)
 
+This project does not include a backend, as its purpose is solely for study and experimentation with Angular's frontend capabilities.
+
 ## Features
 
 - **Signals**: Reactive state management using Angular's new signals API.

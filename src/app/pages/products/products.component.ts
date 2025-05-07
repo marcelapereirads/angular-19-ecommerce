@@ -11,9 +11,9 @@ export class ProductsComponent {
   products = signal<Product[]>([
     {
       id: 1,
-      name: 'Perfume Versace',
+      name: 'Makeup Brush',
       imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/06/09/06/versace-2289267_1280.jpg',
+        'https://cdn.pixabay.com/photo/2019/10/24/03/31/brush-4573247_1280.jpg',
       price: 300,
       availableQuantity: 20,
     },
