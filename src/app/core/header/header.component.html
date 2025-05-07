@@ -1,6 +1,7 @@
 <div class="bg-pink-950 p-6 shadow-md flex justify-between items-center">
-  <h1 class="text-neutral-200 text-xl">E-commerce App</h1>
+  <a class="text-neutral-200 text-xl" routerLink="/">E-commerce App</a>
   <app-button
+    routerLink="/cart"
     [label]="cartButtonLabel + ' (' + cartService.cart().length + ')'"
     [theme]="ButtonTheme.LIGHT"
   ></app-button>

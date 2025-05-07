@@ -10,11 +10,11 @@
   <div class="mx-auto">
     <img
       [src]="product().imageUrl"
-      [alt]="product().title"
+      [alt]="product().name"
       class="w-[300px] h-[200px] object-contain"
     />
   </div>
-  <span class="text-md">{{ product().title }}</span>
+  <span class="text-md">{{ product().name }}</span>
   <span class="text-lg">{{ product().price | currency: "EUR" }}</span>
   <app-button
     [label]="'Add to Cart'"

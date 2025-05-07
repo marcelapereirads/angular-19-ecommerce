@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+h1.title {
+  @apply text-3xl font-bold my-4;
+}
